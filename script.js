@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     themeToggle.addEventListener('click', () => {
+        // Toggle dark mode class on body
         document.body.classList.toggle('dark-mode');
 
         // Update theme in local storage
