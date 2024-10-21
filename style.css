@@ -1,12 +1,14 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f4f4f4; /* Light background */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
 }
 
 header {
-    background-color: #333;
+    background-color: #333; /* Dark header */
     color: white;
     text-align: center;
     padding: 20px;
@@ -27,13 +29,49 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* Light Theme Styles */
 section {
     padding: 20px;
 }
 
+/* Dark Theme Styles */
+body.dark-mode {
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Light text */
+}
+
+body.dark-mode header {
+    background-color: #1f1f1f; /* Darker header */
+}
+
+body.dark-mode nav ul li a {
+    color: #bb86fc; /* Light purple links in dark mode */
+}
+
+/* Card Styles */
+.project {
+    background-color: #ffffff; /* Light card */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Dark Mode Project Card */
+body.dark-mode .project {
+    background-color: #2c2c2c; /* Darker card */
+}
+
+/* Footer Styles */
 footer {
     text-align: center;
-    background-color: #333;
+    background-color: #333; /* Dark footer */
     color: white;
     padding: 10px;
 }
